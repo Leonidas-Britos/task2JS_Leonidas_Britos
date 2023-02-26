@@ -18,7 +18,7 @@
             <nav class="nav_page">
                 <a href="./home.html">Home</a>
                 <a href="./upcomingEvents.html">Upcoming Events</a>
-                <a href="#">Past Events</a>
+                <a class="pastEventsNavSelect" href="#">Past Events</a>
                 <a href="./contact.html">Contact</a>
                 <a href="./stats.html">Stats</a>
             </nav>
@@ -33,22 +33,24 @@
         <div class="check_search_PastEvents">
             <div class="check_home">
                 <form class="form_check">
+                    <label for="bookexchange">Book Exchange</label>
+                    <input type="checkbox" id="bookexchange" name="bookexchange" value="be">
                     <label for="cinema">Cinema</label>
                     <input type="checkbox" id="cinema" name="cinema" value="ci">
                     <label for="cparty">Costume party</label>
                     <input type="checkbox" id="cparty" name="cparty" value="cp">
                     <label for="foodfair">Food fair</label>
                     <input type="checkbox" id="foodfair" name="foodfair" value="ff">
-                    <label for="marathon">Marathon</label>
-                    <input type="checkbox" id="marathon" name="marathon" value="mar">
                     <label for="museum">Museum</label>
                     <input type="checkbox" id="museum" name="museum" value="mus">
                     <label for="musicconcert">Music concert</label>
                     <input type="checkbox" id="musicconcert" name="musicconcert" value="mc">
+                    <label for="race">Race</label>
+                    <input type="checkbox" id="race" name="race" value="ra">
                 </form>
             </div>
             <div class="search_home">
-                <input type="search" name="busqueda" id="busqueda" placeholder="Search">
+                <input id="search_icon" type="search" name="busqueda" id="busqueda" placeholder="Search">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
                     viewBox="0 0 16 16">
                     <path
@@ -67,9 +69,9 @@
         <hr class="separador_footer">
         <div class="contenido_footer">
             <div class="socialNetworkIcons">
-                <img class="instagram" src="./img/instagram.png" alt="icono instagram" width="50">
-                <img class="facebook" src="./img/facebook.png" alt="icono facebook" width="50">
-                <img class="whatsapp" src="./img/whatsapp.png" alt="icono whatsapp" width="50">
+                <a href="#"><img class="instagram" src="./img/instagram.png" alt="icono instagram" width="50"></a>
+                <a href="#"><img class="facebook" src="./img/facebook.png" alt="icono facebook" width="50"></a>
+                <a href="#"><img class="whatsapp" src="./img/whatsapp.png" alt="icono whatsapp" width="50"></a>
             </div>
             <p class="Cohort">Cohort</p>
         </div>

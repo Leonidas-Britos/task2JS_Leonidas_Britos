@@ -84,8 +84,16 @@ nav>a {
 }
 
 nav>a:hover {
-    background-color: rgb(247, 158, 173);
-    color: #000;
+    background-color: rgb(237, 18, 55);
+    color: #fdfdfd;
+}
+
+.homeNavSelect, .contactNavSelect, .pastEventsNavSelect, .upcomingEvenentsNavSelect, .statsNavSelect {
+    background-color: #20b9e4;
+}
+
+.homeNavSelect:hover, .contactNavSelect:hover, .pastEventsNavSelect:hover, .upcomingEvenentsNavSelect:hover, .statsNavSelect:hover {
+    background-color: #556de6;
 }
 
 /*...................Footer...................*/
@@ -115,6 +123,12 @@ nav>a:hover {
 .facebook,
 .whatsapp {
     margin-left: 20px;
+}
+
+.instagram:hover,
+.facebook:hover,
+.whatsapp:hover {
+    cursor: pointer;
 }
 
 .Cohort {
@@ -232,7 +246,7 @@ legend {
 .form_check {
     align-items: center;
     display: flex;
-    width: 750px;
+    width: 900px;
 }
 
 .form_check>label {
@@ -296,6 +310,8 @@ legend {
 }
 
 .tarjeta-texto {
+    height: 70px;
+    width: 230px;
     text-align: center;
 }
 
@@ -312,12 +328,19 @@ legend {
 }
 
 .tarjeta-boton {
-    background-color: #0d6efd;
+    background-color: #e0046c;
+    border: solid 1px grey;
     border-radius: 10px;
     color: #FFFFFF;
     font: 16px "Bebas Neue", cursive;
     text-decoration: none;
     padding: 6px 12px;
+}
+
+.tarjeta-boton:hover {
+    background-color: rgb(237, 18, 55);
+    border: solid 0.5px black;
+    color: #fdfdfd;
 }
 
 /*-------------------------------MEDIA-QUERIES------------------------------------*/
@@ -372,6 +395,10 @@ legend {
     .check_home,
     .check_upcomingEvents {
         display: none;
+    }
+
+    #search_icon:hover{
+        cursor: pointer;
     }
 
     .contenido_stats {

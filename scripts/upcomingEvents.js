@@ -198,7 +198,7 @@ const crearObjeto = (upcomingFiltrado) => {
         <p class="tarjeta-texto">${element.description}</p>
       </div>
       <div class="tarjeta-elementos">
-        <p class="tarjeta-precio">Price: ${element.price}</p>
+        <p class="tarjeta-precio">Price: $${element.price}</p>
         <a class="tarjeta-boton" href="./details.html">View more</a>
       </div>
   </div>`;
