@@ -9,7 +9,6 @@
 
 body {
     background: #e5e5e5;
-
 }
 
 main {
@@ -26,7 +25,6 @@ main {
 
 .header_logo {
     width: 35%;
-
 }
 
 .nav_page {
@@ -93,8 +91,8 @@ nav>a:hover {
 /*...................Footer...................*/
 
 .separador_footer {
-    margin-top: 100px;
     border: solid 0.8px black;
+    margin-top: 100px;
 }
 
 .contenido_footer {
@@ -178,6 +176,16 @@ main {
     padding: 70px 0 70px 0;
 }
 
+.button_contact {
+    color: red;
+    height: 40px;
+    width: 100px;
+}
+
+.button_contact:hover {
+    color: green;
+}
+
 /*-------------------------------------------------STATS--------------------------------------------------------------------*/
 
 .contenido_stats {
@@ -188,8 +196,6 @@ main {
     text-align: center;
     text-decoration: underline;
 }
-
-
 
 .table {
     background-color: white;
@@ -207,17 +213,17 @@ td {
 
 .table th {
     background: #00000099;
-    color: white;
     border: 1px solid black;
     border-spacing: 0;
+    color: white; 
     padding: 0.3em;
     text-align: center;
     vertical-align: middle;
 }
 
 legend {
-    font-weight: bold;
     font-size: 1.5rem;
+    font-weight: bold;
     text-align: center;
 }
 
@@ -241,7 +247,6 @@ legend {
     cursor: pointer;
 }
 
-
 .check_search_upcomingEvents,
 .check_search_PastEvents,
 .check_search_home {
@@ -261,39 +266,22 @@ legend {
     flex-wrap: wrap;
     justify-content: space-around;
 }
-/*
-.card-title {
-    text-align: center;
-}
-
-.card-text {
-    text-align: center;
-}
-
-.elements_cards {
-    align-items: baseline;
-    display: flex;
-    font-size: 1.2rem;
-    justify-content: space-around;
-}
-
-.card {
-    border: solid 1px black;
-    margin-top: 30px;
-} */
 
 .tarjeta {
+    background-color: #FFFFFF;
     border: solid 1px black;
-    border-radius: 0.5rem;;
+    border-radius: 0.5rem;
+    height: 23.5rem;
     margin-top: 30px;
     width: 18rem;
-    word-wrap: break-word;
 }
 
 .tarjeta-imagen {
-    /* background: url("img/Food_Fair.jpg"); */
-    width: 286px;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    border-bottom: solid;
     height: 180px;
+    width: 286px; 
 }
 
 .tarjeta-cuerpo {
@@ -302,15 +290,12 @@ legend {
 }
 
 .tarjeta-titulo {
-    text-align: center;
-    margin-bottom: 1rem;
-    margin-top: 0.1rem;
     font-size: 1.25rem;
+    font-weight: bold;
+    text-align: center;
 }
 
 .tarjeta-texto {
-    margin-top: 0;
-    margin-bottom: 1rem;
     text-align: center;
 }
 
@@ -319,19 +304,19 @@ legend {
     display: flex;
     font-size: 1.2rem;
     justify-content: space-around;
+    margin-bottom: 60px;
 }
 
 .tarjeta-precio {
     margin-top: 0;
-    margin-bottom: 1rem;
 }
 
 .tarjeta-boton {
     background-color: #0d6efd;
     border-radius: 10px;
     color: #FFFFFF;
-    text-decoration: none;
     font: 16px "Bebas Neue", cursive;
+    text-decoration: none;
     padding: 6px 12px;
 }
 
@@ -361,10 +346,9 @@ legend {
 
     .contenido_footer {
         align-content: center;
+        justify-content: space-around;
         padding-left: 3px;
         padding-right: 3px;
-        justify-content: space-around;
-
     }
 
     .instagram,
@@ -402,8 +386,7 @@ legend {
    
     .navSuperior {
         display: flex;
-        flex-direction: column;
-        
+        flex-direction: column;     
     }
 
     .navInferior {
@@ -444,18 +427,16 @@ legend {
     .form_check>input {
         margin-right: 10px;
     }
-}
 
     .check_search_home {
-        flex-direction: column;
         align-items: center;
+        flex-direction: column;
     }
 
     .form_check {
         margin-bottom: 10px;
     }
-
-
+}
 /*--------------------------------------------------------------------*/
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {

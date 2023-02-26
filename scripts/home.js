@@ -172,22 +172,10 @@ var data = {
     ]
 };
 
-let currentDate = data.currentDate
+const homeFiltrado = data.events;
 
-function filtrarFecha(eventos) {
-    const eventPast = []
-    for (evento of eventos) {
-        if (currentDate > evento.date) {
-            eventPast.push(evento)
-        }
-    }
-    return eventPast
-}
-
-const pastFiltrado = filtrarFecha(data.events);
-
-const crearObjeto = (pastFiltrado) => {
-    pastFiltrado.forEach(element => {
+const crearObjeto = (homeFiltrado) => {
+    homeFiltrado.forEach(element => {
         let tarjeta = document.createElement("div");
         tarjeta.classList.add('tarjeta');
         let tarjetaImagen = document.createElement("img");
@@ -218,8 +206,7 @@ const crearObjeto = (pastFiltrado) => {
         tarjetaCuerpo.appendChild(tarjetaTexto);
         tarjetaElementos.appendChild(tarjetaPrecio);
         tarjetaElementos.appendChild(tarjetaBoton);
-
-        document.querySelector("div.cards_pastEvents").appendChild(tarjeta);
+        document.querySelector("div.cards_home").appendChild(tarjeta);
     });
 }
-crearObjeto(pastFiltrado);
+crearObjeto(homeFiltrado);
