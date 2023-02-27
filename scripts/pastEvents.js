@@ -186,6 +186,9 @@ function filtrarFecha(eventos) {
 
 const pastFiltrado = filtrarFecha(data.events);
 
+
+let fragmento = document.createDocumentFragment();
+
 const crearObjeto = (pastFiltrado) => {
     pastFiltrado.forEach(element => {
         let tarjeta = document.createElement("div");
@@ -218,8 +221,9 @@ const crearObjeto = (pastFiltrado) => {
         tarjetaCuerpo.appendChild(tarjetaTexto);
         tarjetaElementos.appendChild(tarjetaPrecio);
         tarjetaElementos.appendChild(tarjetaBoton);
-
-        document.querySelector("div.cards_pastEvents").appendChild(tarjeta);
+        
+        fragmento.appendChild(tarjeta)
+        document.querySelector("div.cards_pastEvents").appendChild(fragmento);
     });
 }
 crearObjeto(pastFiltrado);

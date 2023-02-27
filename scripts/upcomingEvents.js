@@ -185,6 +185,8 @@ function filtrarFecha(eventos) {
 }
 
 const upcomingFiltrado = filtrarFecha(data.events);
+let fragmento = document.createDocumentFragment();
+
 const crearObjeto = (upcomingFiltrado) => {
   const contenedorTarjetas = document.getElementById('cards_upcomingEventsId');
   upcomingFiltrado.forEach(element => {
@@ -202,7 +204,8 @@ const crearObjeto = (upcomingFiltrado) => {
         <a class="tarjeta-boton" href="./details.html">View more</a>
       </div>
   </div>`;
-    contenedorTarjetas.appendChild(tarjeta);
+    fragmento.appendChild(tarjeta);
+    contenedorTarjetas.appendChild(fragmento);
   });
 };
 crearObjeto(upcomingFiltrado);

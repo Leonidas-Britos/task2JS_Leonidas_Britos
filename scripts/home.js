@@ -174,6 +174,8 @@ var data = {
 
 const homeFiltrado = data.events;
 
+let fragmento = document.createDocumentFragment();
+
 const crearObjeto = (homeFiltrado) => {
     homeFiltrado.forEach(element => {
         let tarjeta = document.createElement("div");
@@ -206,6 +208,9 @@ const crearObjeto = (homeFiltrado) => {
         tarjetaCuerpo.appendChild(tarjetaTexto);
         tarjetaElementos.appendChild(tarjetaPrecio);
         tarjetaElementos.appendChild(tarjetaBoton);
+
+        fragmento.appendChild(tarjeta)
+
         document.querySelector("div.cards_home").appendChild(tarjeta);
     });
 }
