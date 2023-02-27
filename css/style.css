@@ -184,20 +184,75 @@ main {
 /*-------------------------------------------------CONTACT------------------------------------------------------------------*/
 
 .contenido_contact {
-
     display: flex;
     justify-content: center;
     padding: 70px 0 70px 0;
 }
 
+.form_contact {
+    align-items: center;
+    background-color: #e0046c;
+    border-radius: 0.5rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+    height: 400px;
+    width: 420px;
+}
+
+.label_form_contact {
+    padding-left: 0px;
+    padding-top: 25px;
+    width: 100%;
+}
+
+.input_form_contact {
+    background-color: #e0046c;
+    border: solid 0.5px white;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    padding-left: 50px;
+    width: 350px;
+}
+
+.input_form_contact:hover {
+    border: solid 0.5px black;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+}
+
+.label_form_contact_textbox{
+    padding-bottom: 10px;
+    padding-top: 35px;
+}
+
+.text_area_contact {
+    background-color: #e0046c;
+    border: solid 0.5px white;
+    height: 90px;;
+    margin-bottom: 15px ;
+    padding-bottom: 20px;
+    width: 350px;
+}
+
+.text_area_contact:hover {
+    border: solid 0.5px black;
+}
+
 .button_contact {
-    color: red;
+    border: solid 0.5px white;
+    border-radius: 0.5rem;
+    color: black;
     height: 40px;
-    width: 100px;
+    width: 350px;;
 }
 
 .button_contact:hover {
-    color: green;
+    border: solid 0.5px black;
+    color: red;
 }
 
 /*-------------------------------------------------STATS--------------------------------------------------------------------*/
