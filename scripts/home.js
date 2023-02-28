@@ -211,7 +211,7 @@ const crearObjeto = (homeFiltrado) => {
 
         fragmento.appendChild(tarjeta)
 
-        document.querySelector("div.cards_home").appendChild(tarjeta);
+        document.querySelector("div.cards_home").appendChild(fragmento);
     });
 }
 crearObjeto(homeFiltrado);
